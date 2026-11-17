@@ -1,0 +1,19 @@
+{
+  // Type-check the plain JS sources through their JSDoc annotations.
+  // No build step: the code runs as-is on Node.
+  "compilerOptions": {
+    "allowJs": true,
+    "checkJs": true,
+    "noEmit": true,
+    "strict": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "module": "nodenext",
+    "moduleResolution": "nodenext",
+    "target": "es2022",
+    "lib": ["es2023"],
+    "types": ["node"],
+    "skipLibCheck": true
+  },
+  "include": ["bin", "src", "test"]
+}
